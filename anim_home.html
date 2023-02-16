@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animação Tela Inicial</title>
+    <style>
+    
+        .raio
+        {
+        position: absolute;
+        top: 50px;
+        left: 450px;
+        width: 650px;
+        height: 650px;
+        animation: anima_logo 10s;
+        animation: infinite alternate; 
+        }
+        @keyframes anima_logo
+        {
+            0%   { left: 0px; }
+            50%  { left: 100px;  top: 70px; }
+            100% { left: 150px;  top: 1px;  }
+        }
+        .logo_verde
+        {
+        position: absolute;
+        top: 100px;
+        left: 600px;
+        width: 400px;
+        height: 500px;
+        animation: anima_logo 10s;
+        animation: infinite alternate;
+        }
+        @keyframes anima_raio
+        {
+            0%   { left: 0px; }
+            50%  { left: 100px;  top: 70px; }
+            100% { left: 150px;  top: 1px;  }
+        }
+        
+    </style>
+</head>
+<body>
+    <img src="raio.webp" class="raio">
+    <img src="logoverde.png" class="logo_verde">
+</body>
+</html>
